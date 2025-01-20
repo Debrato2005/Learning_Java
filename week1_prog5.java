@@ -25,6 +25,8 @@ public class week1_prog5
             price[i]=sc.nextInt();
             System.out.println("Input quantity:");
             qty[i]=sc.nextInt();
+            int rem[]=new int[n];
+            int t[]=new int[n];
         }
 
         System.out.println("Display:");
@@ -43,13 +45,26 @@ public class week1_prog5
             System.out.println("Input name:");
             System.out.println(name[i]);
             System.out.println("Input quantity to be purchased:");
-            int t=sc.nextInt();
+            t[i]=sc.nextInt();
             while(t>qty[i])
             {
                 System.out.println("Input more than available retry:");
-                t=sc.nextInt();
+                t[i]=sc.nextInt();
             }
-            total+=t*price[i];
+            rem[i]=qty[i]-t[i];
+            total+=t[i]*price[i];
+        }
+        System.out.println("BILL:");
+        for(i=0;i<n;i++)
+        {
+            System.out.println("Name:");
+            System.out.println(name[i]);
+            System.out.println("Price:");
+            System.out.println(price[i]);
+            System.out.println("Quantity        purchased:");
+            System.out.println(t[i]);
+System.out.println("Remaining Quantity:");
+            System.out.println(rem[i]);
         }
         System.out.println("Total bill is= "+ total);
     }
