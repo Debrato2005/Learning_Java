@@ -16,6 +16,7 @@ public class week1_prog5
         String[] name = new String[n];
         int price[]=new int[n];
         int qty[]=new int[n];
+        int t[]=new int[n];
 
         for(i=0;i<n;i++)
         {
@@ -26,7 +27,7 @@ public class week1_prog5
             System.out.println("Input quantity:");
             qty[i]=sc.nextInt();
             int rem[]=new int[n];
-            int t[]=new int[n];
+            
         }
 
         System.out.println("Display:");
