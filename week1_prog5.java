@@ -43,7 +43,7 @@ public class week1_prog5
         System.out.println("OWNER Input:");
         for(i=0;i<n;i++)
         {
-            System.out.println("Input name:");
+            System.out.println("Name:");
             System.out.println(name[i]);
             System.out.println("Input quantity to be purchased:");
             t[i]=sc.nextInt();
