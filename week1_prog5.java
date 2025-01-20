@@ -47,7 +47,7 @@ public class week1_prog5
             System.out.println(name[i]);
             System.out.println("Input quantity to be purchased:");
             t[i]=sc.nextInt();
-            while(t>qty[i])
+            while(t[i]>qty[i])
             {
                 System.out.println("Input more than available retry:");
                 t[i]=sc.nextInt();
